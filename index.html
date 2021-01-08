@@ -64,11 +64,20 @@
         </div>
 
         <div>
-            Contact us form 
-            Name 
-            Email 
-            Question 
-            Submit 
+            <label for="fullname">Name:
+                <input type="text" name="name" id="fullname" class="formfield" placeholder="Oliver Roberts" required="required" /> 
+            </label> 
+            <label for="emailAddress">Email address:
+                <input type="email" name="email" id="emailAddress" class="formfield" placeholder="olibob@example.com" required="required">
+            </label>
+            <label for="message">Message:
+                <textarea name="query" id="message" class="formfield" >Tell us about your dream staycation...</textarea>
+            </label>
+            <label for="subscribe">
+                    <input type="checkbox" name="subscribe" id="subscribe" class="subscribe"/>
+                    Please sign me up for location and holiday updates!
+            </label>
+            <input type="submit" name="question" id="question" value="Submit" />
         </div>
 
         <footer>
@@ -113,9 +122,11 @@
                 <a href="https://www.pinterest.com" class="social" target="_blank">
                     <i class="fab fa-pinterest"></i>
                 </a>
-                <p>&#169; Staycation 2021</p>
+                <h5>&#169; Staycation 2021</h5>
             </div>
         </footer>
+
+        <!--Scripts-->
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
                 crossorigin="anonymous"></script>
