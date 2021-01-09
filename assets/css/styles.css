@@ -3,3 +3,7 @@
 #successSubmission {
   display: none;
 }
+
+#map {
+    min-height: 360px;
+}
