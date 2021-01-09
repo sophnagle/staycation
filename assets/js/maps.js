@@ -308,7 +308,6 @@ function initMap() {
                     image: "",
                     url: "https://www.wickedlywelsh.co.uk/",
                 },
-
             ];
 
 
@@ -353,4 +352,9 @@ function initMap() {
                 map: map,
                 });
             }
-    }
+
+        
+
+}
+
+                    
