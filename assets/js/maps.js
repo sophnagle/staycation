@@ -9,7 +9,9 @@ function initMap() {
 
     for (let i = 0; i < locations.length; i++) {
         const infoWindow = new google.maps.InfoWindow({
-            content: locations[i].title + '<a href="' +  locations[i].url + '" target="_blank"> + '<div style="width: 20rem;">' + '<img src="' + locations[0].image + '" alt="Location">' + '<div>' + "</div>" + "</div>" + "</a>",
+            content: locations[i].title + `<a href="` +  locations[i].url + `"` + ` target="_blank">` 
+                                    + `<div style="width: 15rem;">` + `<img src="` + locations[i].image + `"` + `alt="Location">` 
+                                        + `</div>` + `</a>`,
         });
 
         const marker = new google.maps.Marker({
@@ -24,7 +26,9 @@ function initMap() {
 
     for (let i = 0; i < pubs.length; i++) {
         const infoWindow = new google.maps.InfoWindow({
-        content: pubs[i].title,
+        content: pubs[i].title + `<a href="` +  pubs[i].url + `"` + ` target="_blank">` 
+                                    + `<div style="width: 15rem;">` + `<img src="` + pubs[i].image + `"` + `alt="Pub">` 
+                                        + `</div>` + `</a>`,
         });
 
         const marker = new google.maps.Marker({
@@ -38,9 +42,12 @@ function initMap() {
 
     }
 
+
     for (let i = 0; i < restaurants.length; i++) {
         const infoWindow = new google.maps.InfoWindow({
-        content: restaurants[i].title,
+        content: restaurants[i].title + `<a href="` +  restaurants[i].url + `"` + ` target="_blank">` 
+                                    + `<div style="width: 15rem;">` + `<img src="` + restaurants[i].image + `"` + `alt="Restaurant">` 
+                                        + `</div>` + `</a>`,
         });
 
         const marker = new google.maps.Marker({
@@ -54,9 +61,12 @@ function initMap() {
 
     }
 
+
     for (let i = 0; i < beach.length; i++) {
        const infoWindow = new google.maps.InfoWindow({
-        content: beach[i].title,
+        content: beach[i].title + `<a href="` +  beach[i].url + `"` + ` target="_blank">` 
+                                    + `<div style="width: 15rem;">` + `<img src="` + beach[i].image + `"` + `alt="Beach">` 
+                                        + `</div>` + `</a>`,
         });
 
         const marker = new google.maps.Marker({
@@ -72,7 +82,9 @@ function initMap() {
 
     for (let i = 0; i < walks.length; i++) {
        const infoWindow = new google.maps.InfoWindow({
-        content: walks[i].title,
+        content: walks[i].title + `<a href="` +  walks[i].url + `"` + ` target="_blank">` 
+                                    + `<div style="width: 15rem;">` + `<img src="` + walks[i].image + `"` + `alt="Pub">` 
+                                        + `</div>` + `</a>`,
         });
 
         const marker = new google.maps.Marker({
@@ -88,7 +100,9 @@ function initMap() {
 
     for (let i = 0; i < family.length; i++) {
        const infoWindow = new google.maps.InfoWindow({
-        content: family[i].title,
+        content: family[i].title + `<a href="` +  family[i].url + `"` + ` target="_blank">` 
+                                    + `<div style="width: 15rem;">` + `<img src="` + family[i].image + `"` + `alt="Family">` 
+                                        + `</div>` + `</a>`,
         });
 
         const marker = new google.maps.Marker({
@@ -103,7 +117,7 @@ function initMap() {
     }
 
 
-}
+} 
 
 
 var locations = [{
@@ -523,4 +537,4 @@ var family = [
       [      '<a href="' + locations[1].url + '" target="_blank" class="link-map">' + '<div class="infowindow" style="width: 20rem;">' + '<img src="' + locations[1].image + '" alt="Location">' + '<div>' + '<h3>' +  locations[0].title + "</h3>" + "</div>" + "</div>" + "</a>"
       ],
 
-  ]; */
+  ]; */ 
