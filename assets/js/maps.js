@@ -16,6 +16,7 @@ function initMap() {
 
         const marker = new google.maps.Marker({
             position: locations[i].position,
+            animation: google.maps.Animation.DROP,
             map: map,
         });
 
@@ -23,6 +24,7 @@ function initMap() {
             infoWindow.open(map, marker);
         });
     }
+
 
     for (let i = 0; i < pubs.length; i++) {
         const infoWindow = new google.maps.InfoWindow({
@@ -33,6 +35,7 @@ function initMap() {
 
         const marker = new google.maps.Marker({
             position: pubs[i].position,
+            animation: google.maps.Animation.DROP,
             map: map,
         });
         
@@ -52,6 +55,7 @@ function initMap() {
 
         const marker = new google.maps.Marker({
             position: restaurants[i].position,
+            animation: google.maps.Animation.DROP,
             map: map,
         });
         
@@ -71,6 +75,7 @@ function initMap() {
 
         const marker = new google.maps.Marker({
             position: beach[i].position,
+            animation: google.maps.Animation.DROP,
             map: map,
         });
         
@@ -89,6 +94,7 @@ function initMap() {
 
         const marker = new google.maps.Marker({
             position: walks[i].position,
+            animation: google.maps.Animation.DROP,
             map: map,
         });
         
@@ -107,6 +113,7 @@ function initMap() {
 
         const marker = new google.maps.Marker({
             position: family[i].position,
+            animation: google.maps.Animation.DROP,
             map: map,
         });
         
@@ -114,10 +121,12 @@ function initMap() {
             infoWindow.open(map, marker);
         });
 
-    }
+    }  
+
+}
 
 
-} 
+
 
 
 var locations = [{
@@ -525,6 +534,8 @@ var family = [
         url: "https://www.wickedlywelsh.co.uk/",
     },
 ];
+
+
 
 
 /*  var infoWindowAbout = [
