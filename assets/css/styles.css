@@ -1,9 +1,59 @@
-/* Contact us form */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+
+
+
+
+body {
+    background-color: #cef0ac;
+    color: #555;
+    width: 100vw;
+    font-family: "poppins", sans-serif;
+    font-weight: 300;
+}
+
+
+/*..................................Map */
+
+#map {
+    min-height: 360px;
+}
+
+/*.............................Contact us form */
 
 #successSubmission {
   display: none;
 }
 
-#map {
-    min-height: 360px;
+/*.................................Footer */
+
+footer {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
 }
+
+footer a {
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    color: inherit;
+    padding: 5px;
+}
+
+footer a:hover { 
+    color: #fff;
+    font-weight: 100;
+}
+
+.contactLinks {
+    font-family: "poppins", sans-serif;
+    font-weight: 200;
+}
+
+
+address {
+    font-size: 70%;
+}
+
+
+
