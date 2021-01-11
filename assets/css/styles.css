@@ -20,9 +20,23 @@ body {
 
 /*.............................Contact us form */
 
+.contact {
+    margin: 30px
+}
+
+.formfield {
+    width: 100%;
+    border: 1px solid #CACACA;
+}
+
+label, input {
+    display: block;
+}
+
 #successSubmission {
   display: none;
 }
+
 
 /*.................................Footer */
 
