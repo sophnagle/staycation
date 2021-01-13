@@ -1,135 +1,183 @@
 function initMap() {
-    var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 8,
-        center: {
-            lat: 51.7094,
-            lng: -4.6998
+
+        var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 8,
+            center: {
+                lat: 51.7094,
+                lng: -4.6998
+            }
+        });
+
+        for (let i = 0; i < locations.length; i++) {
+            const infoWindow = new google.maps.InfoWindow({
+                content: locations[i].title + `<a href="` +  locations[i].url + `"` + ` target="_blank">` 
+                                        + `<div style="width: 15rem;">` + `<img src="` + locations[i].image + `"` + `alt="Location">` 
+                                            + `</div>` + `</a>`,
+            });
+
+            const marker = new google.maps.Marker({
+                position: locations[i].position,
+                animation: google.maps.Animation.DROP,
+                map: map,
+            });
+
+            marker.addListener("click", () => {
+                infoWindow.open(map, marker);
+            });
+
         }
-    });
-
-    for (let i = 0; i < locations.length; i++) {
-        const infoWindow = new google.maps.InfoWindow({
-            content: locations[i].title + `<a href="` +  locations[i].url + `"` + ` target="_blank">` 
-                                    + `<div style="width: 15rem;">` + `<img src="` + locations[i].image + `"` + `alt="Location">` 
-                                        + `</div>` + `</a>`,
-        });
-
-        const marker = new google.maps.Marker({
-            position: locations[i].position,
-            animation: google.maps.Animation.DROP,
-            map: map,
-        });
-
-        marker.addListener("click", () => {
-            infoWindow.open(map, marker);
-        });
-    }
-
-
-    for (let i = 0; i < pubs.length; i++) {
-        const infoWindow = new google.maps.InfoWindow({
-        content: pubs[i].title + `<a href="` +  pubs[i].url + `"` + ` target="_blank">` 
-                                    + `<div style="width: 15rem;">` + `<img src="` + pubs[i].image + `"` + `alt="Pub">` 
-                                        + `</div>` + `</a>`,
-        });
-
-        const marker = new google.maps.Marker({
-            position: pubs[i].position,
-            animation: google.maps.Animation.DROP,
-            map: map,
-        });
-        
-        marker.addListener("click", () => {
-            infoWindow.open(map, marker);
-        });
-
-    }
-
-
-    for (let i = 0; i < restaurants.length; i++) {
-        const infoWindow = new google.maps.InfoWindow({
-        content: restaurants[i].title + `<a href="` +  restaurants[i].url + `"` + ` target="_blank">` 
-                                    + `<div style="width: 15rem;">` + `<img src="` + restaurants[i].image + `"` + `alt="Restaurant">` 
-                                        + `</div>` + `</a>`,
-        });
-
-        const marker = new google.maps.Marker({
-            position: restaurants[i].position,
-            animation: google.maps.Animation.DROP,
-            map: map,
-        });
-        
-        marker.addListener("click", () => {
-            infoWindow.open(map, marker);
-        });
-
-    }
-
-
-    for (let i = 0; i < beach.length; i++) {
-       const infoWindow = new google.maps.InfoWindow({
-        content: beach[i].title + `<a href="` +  beach[i].url + `"` + ` target="_blank">` 
-                                    + `<div style="width: 15rem;">` + `<img src="` + beach[i].image + `"` + `alt="Beach">` 
-                                        + `</div>` + `</a>`,
-        });
-
-        const marker = new google.maps.Marker({
-            position: beach[i].position,
-            animation: google.maps.Animation.DROP,
-            map: map,
-        });
-        
-        marker.addListener("click", () => {
-            infoWindow.open(map, marker);
-        });
-
-    }
-
-    for (let i = 0; i < walks.length; i++) {
-       const infoWindow = new google.maps.InfoWindow({
-        content: walks[i].title + `<a href="` +  walks[i].url + `"` + ` target="_blank">` 
-                                    + `<div style="width: 15rem;">` + `<img src="` + walks[i].image + `"` + `alt="Pub">` 
-                                        + `</div>` + `</a>`,
-        });
-
-        const marker = new google.maps.Marker({
-            position: walks[i].position,
-            animation: google.maps.Animation.DROP,
-            map: map,
-        });
-        
-        marker.addListener("click", () => {
-            infoWindow.open(map, marker);
-        });
-
-    }
-
-    for (let i = 0; i < family.length; i++) {
-       const infoWindow = new google.maps.InfoWindow({
-        content: family[i].title + `<a href="` +  family[i].url + `"` + ` target="_blank">` 
-                                    + `<div style="width: 15rem;">` + `<img src="` + family[i].image + `"` + `alt="Family">` 
-                                        + `</div>` + `</a>`,
-        });
-
-        const marker = new google.maps.Marker({
-            position: family[i].position,
-            animation: google.maps.Animation.DROP,
-            map: map,
-        });
-        
-        marker.addListener("click", () => {
-            infoWindow.open(map, marker);
-        });
-
-    }  
 
 }
 
 
+function showAmenity(sel) {
+
+    var value = sel.value;
+
+    var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 8,
+            center: {
+                lat: 51.7094,
+                lng: -4.6998
+            }
+        });
+
+        if (value == "pubs") {
+
+                for (let i = 0; i < pubs.length; i++) {
+
+                    const infoWindow = new google.maps.InfoWindow({
+                    content: pubs[i].title + `<a href="` +  pubs[i].url + `"` + ` target="_blank">` 
+                                                + `<div style="width: 15rem;">` + `<img src="` + pubs[i].image + `"` + `alt="Amenity">` 
+                                                    + `</div>` + `</a>`,
+                    });
+
+                    const marker = new google.maps.Marker({
+                        position: pubs[i].position,
+                        animation: google.maps.Animation.DROP,
+                        map: map,
+                    });
+                    
+                    marker.addListener("click", () => {
+                        infoWindow.open(map, marker);
+                    });
+                }
+    } else if (value == "beach") {
+
+                for (let i = 0; i < beach.length; i++) {
+
+                    const infoWindow = new google.maps.InfoWindow({
+                        content: beach[i].title + `<a href="` +  beach[i].url + `"` + ` target="_blank">` 
+                                                + `<div style="width: 15rem;">` + `<img src="` + beach[i].image + `"` + `alt="Beach">` 
+                                                    + `</div>` + `</a>`,
+                    });
+
+                    const marker = new google.maps.Marker({
+                        position: beach[i].position,
+                        animation: google.maps.Animation.DROP,
+                        map: map,
+                    });
+                    
+                    marker.addListener("click", () => {
+                        infoWindow.open(map, marker);
+                    });
+                }
+                
+            }  else if (value == "restaurants") {
+
+                for (let i = 0; i < restaurants.length; i++) {
+                    const infoWindow = new google.maps.InfoWindow({
+                    content: restaurants[i].title + `<a href="` +  restaurants[i].url + `"` + ` target="_blank">` 
+                                                + `<div style="width: 15rem;">` + `<img src="` + restaurants[i].image + `"` + `alt="Restaurant">` 
+                                                    + `</div>` + `</a>`,
+                    });
+
+                    const marker = new google.maps.Marker({
+                        position: restaurants[i].position,
+                        animation: google.maps.Animation.DROP,
+                        map: map,
+                    });
+                    
+                    marker.addListener("click", () => {
+                        infoWindow.open(map, marker);
+                    });
+
+                }
+            }
+
+            else if (value == "walks") {
+
+                for (let i = 0; i < walks.length; i++) {
+                    const infoWindow = new google.maps.InfoWindow({
+                        content: walks[i].title + `<a href="` +  walks[i].url + `"` + ` target="_blank">` 
+                                                    + `<div style="width: 15rem;">` + `<img src="` + walks[i].image + `"` + `alt="Pub">` 
+                                                        + `</div>` + `</a>`,
+                        });
+
+                        const marker = new google.maps.Marker({
+                            position: walks[i].position,
+                            animation: google.maps.Animation.DROP,
+                            map: map,
+                        });
+                        
+                        marker.addListener("click", () => {
+                            infoWindow.open(map, marker);
+                        });
+
+                 }
+
+            } else if (value == "family") {
+
+                for (let i = 0; i < family.length; i++) {
+                    const infoWindow = new google.maps.InfoWindow({
+                        content: family[i].title + `<a href="` +  family[i].url + `"` + ` target="_blank">` 
+                                                    + `<div style="width: 15rem;">` + `<img src="` + family[i].image + `"` + `alt="Family">` 
+                                                        + `</div>` + `</a>`,
+                        });
+
+                        const marker = new google.maps.Marker({
+                            position: family[i].position,
+                            animation: google.maps.Animation.DROP,
+                            map: map,
+                        });
+                        
+                        marker.addListener("click", () => {
+                            infoWindow.open(map, marker);
+                        });
+
+                }  
+
+            } else {
+
+                for (let i = 0; i < locations.length; i++) {
+                        const infoWindow = new google.maps.InfoWindow({
+                            content: locations[i].title + `<a href="` +  locations[i].url + `"` + ` target="_blank">` 
+                                                    + `<div style="width: 15rem;">` + `<img src="` + locations[i].image + `"` + `alt="Location">` 
+                                                        + `</div>` + `</a>`,
+                        });
+
+                        const marker = new google.maps.Marker({
+                            position: locations[i].position,
+                            animation: google.maps.Animation.DROP,
+                            map: map,
+                        });
+
+                        marker.addListener("click", () => {
+                            infoWindow.open(map, marker);
+                        });
+
+        }
+
+            }             
+}      
 
 
 
-var locations = [{
+
+
+var locations = [
+    
+    {
         title: "Fforest Farm",
         position: {
             lat: 52.06227,
@@ -534,18 +582,3 @@ var family = [
         url: "https://www.wickedlywelsh.co.uk/",
     },
 ];
-
-
-
-
-/*  var infoWindowAbout = [
-
-  // array needs to be fully populated, have just included two as a test until function works
-      [ 
-          '<a href="' +  locations[0].url + '" target="_blank" class="link-map">' + '<div class="infowindow" style="width: 20rem;">' + '<img src="' + locations[0].image + '" alt="Location">' + '<div>' + '<h3>' +  locations[0].title + "</h3>" + "</div>" + "</div>" + "</a>"
-      ],
-
-      [      '<a href="' + locations[1].url + '" target="_blank" class="link-map">' + '<div class="infowindow" style="width: 20rem;">' + '<img src="' + locations[1].image + '" alt="Location">' + '<div>' + '<h3>' +  locations[0].title + "</h3>" + "</div>" + "</div>" + "</a>"
-      ],
-
-  ]; */ 
