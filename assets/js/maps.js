@@ -11,7 +11,7 @@ function initMap() {
         for (let i = 0; i < locations.length; i++) {
             const infoWindow = new google.maps.InfoWindow({
                 content: locations[i].title + `<a href="` +  locations[i].url + `"` + ` target="_blank">` 
-                                        + `<div style="width: 15rem;">` + `<img src="` + locations[i].image + `"` + `alt="Location">` 
+                                        + `<div class="card" style="width: 15rem;">` + `<img class="card-img-top" src="` + locations[i].image + `"` + `alt="Location">` 
                                             + `</div>` + `</a>`,
             });
 
@@ -48,7 +48,7 @@ function showAmenity(sel) {
 
                     const infoWindow = new google.maps.InfoWindow({
                     content: pubs[i].title + `<a href="` +  pubs[i].url + `"` + ` target="_blank">` 
-                                                + `<div style="width: 15rem;">` + `<img src="` + pubs[i].image + `"` + `alt="Amenity">` 
+                                                + `<div class="card" style="width: 15rem;">` + `<img class="card-img-top" src="` + pubs[i].image + `"` + `alt="Amenity">` 
                                                     + `</div>` + `</a>`,
                     });
 
@@ -68,7 +68,7 @@ function showAmenity(sel) {
 
                     const infoWindow = new google.maps.InfoWindow({
                         content: beach[i].title + `<a href="` +  beach[i].url + `"` + ` target="_blank">` 
-                                                + `<div style="width: 15rem;">` + `<img src="` + beach[i].image + `"` + `alt="Beach">` 
+                                                + `<div class="card" style="width: 15rem;">` + `<img class="card-img-top" src="` + beach[i].image + `"` + `alt="Beach">` 
                                                     + `</div>` + `</a>`,
                     });
 
@@ -88,7 +88,7 @@ function showAmenity(sel) {
                 for (let i = 0; i < restaurants.length; i++) {
                     const infoWindow = new google.maps.InfoWindow({
                     content: restaurants[i].title + `<a href="` +  restaurants[i].url + `"` + ` target="_blank">` 
-                                                + `<div style="width: 15rem;">` + `<img src="` + restaurants[i].image + `"` + `alt="Restaurant">` 
+                                                + `<div class="card" style="width: 15rem;">` + `<img class="card-img-top" src="` + restaurants[i].image + `"` + `alt="Restaurant">` 
                                                     + `</div>` + `</a>`,
                     });
 
@@ -110,7 +110,7 @@ function showAmenity(sel) {
                 for (let i = 0; i < walks.length; i++) {
                     const infoWindow = new google.maps.InfoWindow({
                         content: walks[i].title + `<a href="` +  walks[i].url + `"` + ` target="_blank">` 
-                                                    + `<div style="width: 15rem;">` + `<img src="` + walks[i].image + `"` + `alt="Pub">` 
+                                                    + `<div class="card" style="width: 15rem;">` + `<img class="card-img-top" src="` + walks[i].image + `"` + `alt="Pub">` 
                                                         + `</div>` + `</a>`,
                         });
 
@@ -131,7 +131,7 @@ function showAmenity(sel) {
                 for (let i = 0; i < family.length; i++) {
                     const infoWindow = new google.maps.InfoWindow({
                         content: family[i].title + `<a href="` +  family[i].url + `"` + ` target="_blank">` 
-                                                    + `<div style="width: 15rem;">` + `<img src="` + family[i].image + `"` + `alt="Family">` 
+                                                    + `<div class="card" style="width: 15rem;">` + `<img class="card-img-top" src="` + family[i].image + `"` + `alt="Family">` 
                                                         + `</div>` + `</a>`,
                         });
 
@@ -152,7 +152,7 @@ function showAmenity(sel) {
                 for (let i = 0; i < locations.length; i++) {
                         const infoWindow = new google.maps.InfoWindow({
                             content: locations[i].title + `<a href="` +  locations[i].url + `"` + ` target="_blank">` 
-                                                    + `<div style="width: 15rem;">` + `<img src="` + locations[i].image + `"` + `alt="Location">` 
+                                                    + `<div class="card" style="width: 15rem;">` + `<img class="card-img-top" src="` + locations[i].image + `"` + `alt="Location">` 
                                                         + `</div>` + `</a>`,
                         });
 
@@ -184,7 +184,7 @@ var locations = [
             lng: -4.645963
         },
         map: map,
-        image: "",
+        image: "assets/images/fforestfarm.jpg",
         url: "https://www.coldatnight.co.uk/fforest-farm/",
     },
 
@@ -195,7 +195,7 @@ var locations = [
             lng: -4.6843
         },
         map: map,
-        image: "",
+        image: "assets/images/cwtch.jpg",
         url: "https://westwalesholidaycottages.co.uk/cwtch",
     },
 
@@ -206,7 +206,7 @@ var locations = [
             lng: -4.704632
         },
         map: map,
-        image: "",
+        image: "assets/images/thecoachhouse.jpg",
         url: "https://www.fbmholidays.co.uk/cottages/tenby/the-coach-house",
     },
 
@@ -217,7 +217,7 @@ var locations = [
             lng: -4.7166
         },
         map: map,
-        image: "",
+        image: "assets/images/griffithston.jpg",
         url: "https://www.ukcampsite.co.uk/sites/details.asp?revid=7804",
     },
 
@@ -228,7 +228,7 @@ var locations = [
             lng: -4.210921
         },
         map: map,
-        image: "",
+        image: "assets/images/onecatfarm.jpg",
         url: "https://www.onecatfarm.com/booking-prices-availability/the-hide/",
     },
 
@@ -239,7 +239,7 @@ var locations = [
             lng: -4.0468307
         },
         map: map,
-        image: "",
+        image: "assets/images/fronhaul.jpg",
         url: "https://westwalesholidaycottages.co.uk/fron-haul",
     },
 
@@ -250,7 +250,7 @@ var locations = [
             lng: -5.260356
         },
         map: map,
-        image: "",
+        image: "assets/images/rhosgadw.jpg",
         url: "http://www.campingstdavids.co.uk/",
     }
 
@@ -266,7 +266,7 @@ var pubs = [
             lng: -4.9214
         },
         map: map,
-        image: "",
+        image: "assets/images/thejollysailor.jpg",
         url: "https://www.jollysailorburton.co.uk/",
     },
 
@@ -277,7 +277,7 @@ var pubs = [
             lng: -4.0669
         },
         map: map,
-        image: "",
+        image: "assets/images/theblacklion.JPG",
         url: "https://blion.co.uk/",
     },
 
@@ -288,7 +288,7 @@ var pubs = [
             lng: -4.3772
         },
         map: map,
-        image: "",
+        image: "assets/images/ffostrasolarms.jpg",
         url: "https://ffostrasolarms.co.uk/",
     },
 
@@ -299,7 +299,7 @@ var pubs = [
             lng: -4.2804
         },
         map: map,
-        image: "",
+        image: "assets/images/thegriffin.jpg",
         url: "https://www.griffininndale.co.uk/",
     },
 
@@ -310,7 +310,7 @@ var pubs = [
             lng: -4.7022
         },
         map: map,
-        image: "",
+        image: "assets/images/theoldchemistinn.jpg",
         url: "https://www.tripadvisor.co.uk/Restaurant_Review-g191268-d1395495-Reviews-The_Old_Chemist_Inn-Saundersfoot_Pembrokeshire_Wales.html",
     },
 
@@ -321,7 +321,7 @@ var pubs = [
             lng: -4.4682
         },
         map: map,
-        image: "",
+        image: "assets/images/thecaptainstable.jpg",
         url: "https://thecaptainstable.co.uk/index.html",
     },
 
@@ -332,7 +332,7 @@ var pubs = [
             lng: -4.41502
         },
         map: map,
-        image: "",
+        image: "assets/images/hopeandanchor.jpg",
         url: "https://www.thehopeandanchorpub.co.ukhttps://www.tripadvisor.co.uk/Restaurant_Review-g191253-d1529378-Reviews-Hope_Anchor-Tenby_Pembrokeshire_Wales.html",
     },
 
@@ -347,7 +347,7 @@ var restaurants = [
             lng: -4.7012
         },
         map: map,
-        image: "",
+        image: "assets/images/blueball.jpg",
         url: "https://www.blueballtenby.com/",
     },
 
@@ -358,7 +358,7 @@ var restaurants = [
             lng: -4.6954
         },
         map: map,
-        image: "",
+        image: "assets/images/coast.jpg",
         url: "https://coastsaundersfoot.co.uk/",
     },
 
@@ -369,7 +369,7 @@ var restaurants = [
             lng: -4.74347
         },
         map: map,
-        image: "",
+        image: "assets/images/ultracomida.jpg",
         url: "https://www.ultracomida.co.uk/page/venues/narberth",
     },
 
@@ -380,7 +380,7 @@ var restaurants = [
             lng: -4.8327
         },
         map: map,
-        image: "",
+        image: "assets/images/thecanteen.jpg",
         url: "https://www.thecanteennewport.com/",
     },
 
@@ -391,7 +391,7 @@ var restaurants = [
             lng: -4.1470
         },
         map: map,
-        image: "",
+        image: "assets/images/themill.jpg",
         url: "https://www.tripadvisor.co.uk/Restaurant_Review-g552052-d4513699-Reviews-The_Mill-Trefin_St_Davids_Peninsula_Pembrokeshire_Wales.html",
     },
 ];
@@ -405,7 +405,7 @@ var beach = [
             lng: -4.421609
         },
         map: map,
-        image: "",
+        image: "assets/images/tenby.jpg",
         url: "https://www.visitwales.com/destinations/west-wales/pembrokeshire/things-do-tenby",
     },
 
@@ -416,7 +416,7 @@ var beach = [
             lng: -4.7922
         },
         map: map,
-        image: "",
+        image: "assets/images/saundersfoot.jpg",
         url: "https://www.visitpembrokeshire.com/explore-pembrokeshire/beaches/saundersfoot",
     },
 
@@ -427,7 +427,7 @@ var beach = [
             lng: -4.4720
         },
         map: map,
-        image: "",
+        image: "assets/images/llangranog.jpg",
         url: "https://www.thebeachguide.co.uk/south-wales/ceredigion/llangrannog.htm",
     },
 
@@ -438,7 +438,7 @@ var beach = [
             lng: -4.5451
         },
         map: map,
-        image: "",
+        image: "assets/images/aberporth.jpg",
         url: "https://www.cardigan-bay.com/aberporth-beach-cardigan-bay/",
     },
 
@@ -449,7 +449,7 @@ var beach = [
             lng: -4.5177
         },
         map: map,
-        image: "",
+        image: "assets/images/tresaith.jpg",
         url: "https://www.cardigan-bay.com/tresaith-beach/",
     },
 
@@ -460,7 +460,7 @@ var beach = [
             lng: -4.6405
         },
         map: map,
-        image: "",
+        image: "assets/images/mwnt.jpg",
         url: "https://www.nationaltrust.org.uk/mwnt",
     },
 
@@ -475,7 +475,7 @@ var walks = [
             lng: -4.6862
         },
         map: map,
-        image: "",
+        image: "assets/images/caldyisland.JPG",
         url: "https://www.countryfile.com/go-outdoors/walks/walk-caldey-island-pembrokeshire/",
     },
 
@@ -486,7 +486,7 @@ var walks = [
             lng: -5.1124
         },
         map: map,
-        image: "",
+        image: "assets/images/marloes.jpg",
         url: "https://www.countryfile.com/go-outdoors/walks/walk-marloes-peninsula-pembrokeshire/",
     },
 
@@ -497,7 +497,7 @@ var walks = [
             lng: -4.9296
         },
         map: map,
-        image: "",
+        image: "assets/images/dyffryn.JPG",
         url: "https://www.countryfile.com/go-outdoors/walks/walk-dyffryn-fernant-garden-pembrokeshire/",
     },
 
@@ -508,7 +508,7 @@ var walks = [
             lng: -4.7036
         },
         map: map,
-        image: "",
+        image: "assets/images/tenby.jpg",
         url: "https://www.countryfile.com/go-outdoors/walks/walk-tenby-pembrokeshire/",
     },
 
@@ -523,7 +523,7 @@ var family = [
             lng: -4.8001
         },
         map: map,
-        image: "",
+        image: "assets/images/oakwood.jpg",
         url: "https://www.oakwoodthemepark.co.uk/",
     },
 
@@ -534,7 +534,7 @@ var family = [
             lng: -4.7328
         },
         map: map,
-        image: "",
+        image: "assets/images/follyfarm.jpg",
         url: "https://www.folly-farm.co.uk",
     },
 
@@ -545,7 +545,7 @@ var family = [
             lng: -3.6870
         },
         map: map,
-        image: "",
+        image: "assets/images/danyrogof.jpg",
         url: "https://www.yha.org.uk/experience/national-showcaves-centre-wales",
     },
 
@@ -556,7 +556,7 @@ var family = [
             lng: -4.9000
         },
         map: map,
-        image: "",
+        image: "assets/images/botanical.jpg",
         url: "https://botanicgarden.wales/",
     },
 
@@ -567,7 +567,7 @@ var family = [
             lng: -4.7520
         },
         map: map,
-        image: "",
+        image: "assets/images/dinosaur.jpg",
         url: "https://www.thedinosaurpark.co.uk/",
     },
 
@@ -578,7 +578,7 @@ var family = [
             lng: -4.9713
         },
         map: map,
-        image: "",
+        image: "assets/images/chocolate.JPG",
         url: "https://www.wickedlywelsh.co.uk/",
     },
 ];
