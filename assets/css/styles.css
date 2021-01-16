@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    background-color: #cef0ac;
+    background-color: #D0FFC5;
     color: #555;
     font-family: "poppins", sans-serif;
     font-weight: 300;
@@ -14,12 +14,29 @@ body {
     padding: 0;
 }
 
+/*...................................Navigation */
+
+.navbar li, a {
+    color: #fff;
+}
+
+.largeMenu {
+    display: none;
+}
+
+.navbar-brand {
+    font-size: 150%;
+    font-weight: 500;
+}
+
+.fas {
+    color: #fff;
+}
 
 /*...................................Landing page*/
 
 #landingPage {
   min-width: 100vw;
-  min-height: 100vw;
   position: relative;
 }
 
@@ -31,7 +48,6 @@ body {
   padding: 0;
   z-index: -1;
 }
-
 
 
 /*..................................Map */
@@ -104,4 +120,38 @@ address {
 }
 
 
+/*.................................Media Queries */
 
+
+/*  Large devices (desktops, 992px and up) */ 
+
+@media (min-width: 992px) { 
+
+    .navbar {
+        background-color: #93B08D;
+    }
+
+    .navbar button {
+        display: none;
+    }
+
+    .largeMenu {
+        display: inline;
+    }
+
+    .largeMenu li {
+        list-style-type: none;
+        float: left;
+        padding: 0px 30px;
+        font-weight: 500;
+        font-size: 125%;
+    }
+
+    .largeMenu a:hover {
+        color: #555;
+    }
+
+    .navbar-brand:hover {
+        color: #555;
+    }
+}
