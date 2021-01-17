@@ -14,6 +14,10 @@ body {
     padding: 0;
 }
 
+.fade {
+    opacity: 0;
+}
+
 /*...................................Navigation */
 
 .navbar li, a {
@@ -32,6 +36,20 @@ body {
 .fas {
     color: #fff;
 }
+
+.scroll {
+    text-align: center;
+    text-decoration: none;
+}
+
+.scroll:hover::before {
+  content: "Scroll to";
+}
+
+.scroll:hover::after {
+    content: "the top";
+}
+
 
 /*...................................Landing page*/
 
@@ -57,7 +75,7 @@ body {
 }
 
 #map {
-    min-height: 360px;
+    min-height: 360px;;
 }
 
 .amenities p {

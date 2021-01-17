@@ -1,6 +1,6 @@
 function initMap() {
 
-        var map = new google.maps.Map(document.getElementById("map"), {
+        let map = new google.maps.Map(document.getElementById("map"), {
             zoom: 8,
             center: {
                 lat: 51.7094,
@@ -34,7 +34,7 @@ function showAmenity(sel) {
 
     var value = sel.value;
 
-    var map = new google.maps.Map(document.getElementById("map"), {
+    let map = new google.maps.Map(document.getElementById("map"), {
             zoom: 8,
             center: {
                 lat: 51.7094,
@@ -168,7 +168,7 @@ function showAmenity(sel) {
 
         }
 
-            }             
+    }             
 }      
 
 
@@ -582,3 +582,5 @@ var family = [
         url: "https://www.wickedlywelsh.co.uk/",
     },
 ];
+
+initMap();

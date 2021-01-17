@@ -19,7 +19,7 @@
 <body>
     <div class="container-fluid">
         <header>
-            <!-- Navbar for mobile first design -->
+            <!-- Navbar  -->
             <nav class="navbar navbar fixed-top container-fluid">
                     <!-- Navbar brand -->
                     <a class="navbar-brand" href="#about">Staycation</a>
@@ -69,22 +69,23 @@
                         </div>
             </nav>
             
-                <div id="landingPage">
+            <div id="landingPage">
                     <video playsinline autoplay muted loop id="video">
                         <source src="assets/video/welshcoast.mp4" type="video/mp4">
                     </video>
-                </div>
+            </div>
 
             <h1>Staycation</h1>
         </header>
 
+        <!-- About us section -->
         <div class="row">
             <div class="col-lg-6 col-md-6" id="about">
-            <h2>About us</h2>
-            <p>Escape normality and enjoy a retreat in one of our luxorious staycations across the beautiful west Wales coast including cosy log cabins, glamping yurts, family-friendly cottages and romantic hideaways with hot-tubs! The area is known for its beautiful landscape, beaches and walks as well as its delicious restruants, local pubs and cultural landmarks. </p>
+                <h2 class="fade">About us</h2>
+                <p class="fade">Escape normality and enjoy a retreat in one of our luxorious staycations across the beautiful west Wales coast including cosy log cabins, glamping yurts, family-friendly cottages and romantic hideaways with hot-tubs! The area is known for its beautiful landscape, beaches and walks as well as its delicious restruants, local pubs and cultural landmarks. </p>
             </div>
             <div class="col-lg-6 col-md-6">
-                <img>Image 
+                <img class="fade">Image 
             </div>
         </div>
 
@@ -92,7 +93,7 @@
         <div class="row" id="locations">
             <div class="col-lg-6 col-md-6 map">
                 <div id="map"></div>
-                    <div class="dropdown">
+                    <div class="dropdown fade">
                         <label for="types">Show me the places in West Wales for:</label>
                         <select name="types" id="types"  onchange="showAmenity(this);">
                             <option value="locations">Places to stay</option>
@@ -105,14 +106,14 @@
                     </div>
             </div>
             <div class="col-lg-6 col-md-6 amenities">
-                <p>Across the west coast we offer lots of exclusive locations that you can book. Explore these on the map and use the drop down options to find ideas for your trip.</p>
+                <p class="fade">Across the west coast we offer lots of exclusive locations that you can book. Explore these on the map and use the drop down options to find ideas for your trip.</p>
             </div>
         </div>
 
         <!-- Contact us form -->
         <div class="row">
             <div class="col-lg-6 contact" id="contactUs">
-                <form onsubmit="return sendMail(this);">
+                <form class="fade" onsubmit="return sendMail(this);">
                     <label for="fullname">Name:
                         <input type="text" name="name" id="fullname" class="formfield" placeholder="Name" required="required" /> 
                     </label> 
@@ -137,6 +138,12 @@
                 </div>
         </div>
 
+        <!-- Scroll to top for better user experience-->
+        <div class="scroll">
+            <a href="#about" class="fa fa-chevron-up"></a>
+        </div>
+
+        <!-- Footer -->
         <footer>
             <h5>&#169; Ty Staycation 2021</h5>
             <!-- Links to take user back to website sections-->
@@ -185,9 +192,10 @@
                 crossorigin="anonymous"></script>
         
         <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaMXgPJzCqaHe3G7uq5qL9g1KH3qbiLkg&callback=initMap"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaMXgPJzCqaHe3G7uq5qL9g1KH3qbiLkg"></script>
         <script async src="assets/js/sendEmail.js"></script>
         <script async src="assets/js/maps.js"></script>
+        <script async src="assets/js/fadeIn.js"></script>
     
     </div>
 </body>
