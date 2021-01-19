@@ -24,8 +24,16 @@ body {
 
 /*...................................Navigation */
 
+.navbar {
+    background-color: #93B08D;
+}
+
 .navbar li, a {
     color: #fff;
+}
+
+.navbar a:hover {
+    color: #555;
 }
 
 .largeMenu {
@@ -35,6 +43,10 @@ body {
 .navbar-brand {
     font-size: 150%;
     font-weight: 500;
+}
+
+.navbar-brand:hover {
+    color: #555;
 }
 
 .fas {
@@ -219,10 +231,6 @@ address {
 
 @media (min-width: 992px) { 
 
-    .navbar {
-        background-color: #93B08D;
-    }
-
     .navbar button {
         display: none;
     }
@@ -240,10 +248,6 @@ address {
     }
 
     .largeMenu a:hover {
-        color: #555;
-    }
-
-    .navbar-brand:hover {
         color: #555;
     }
 
