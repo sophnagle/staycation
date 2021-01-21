@@ -17,7 +17,7 @@
         </script>
 </head>
 <body>
-    <div class="container-fluid">
+    <div>
         
         <!-- Navbar  -->
         <div>
@@ -33,7 +33,7 @@
                         </span>
                     </button>
                     <!-- Collapsible content on small screens -->
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent1">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
                         <!-- Links -->
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
@@ -66,32 +66,42 @@
                                 <li>
                                     <a class="nav-link" href="#contactUs">Contact us</a>
                                 </li>
-                            </ul>
-                        </div>
+                        </ul>
+                    </div>
             </nav>
         </div>
 
         <!-- Landing page -->
-        <div id="landingPage">
-            <video playsinline autoplay muted loop id="video">
-                    <source src="assets/video/welshcoast.mp4" type="video/mp4">
-            </video>
-            <div class="overlay">
-                <div class="callToAction">
-                    <h1>Staycation</h1>
-                    <a href="#about"><h3>relax and reset</h3></a>
-                </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div id="landingPage">
+                    <video playsinline autoplay muted loop id="video">
+                            <source src="assets/video/welshcoast.mp4" type="video/mp4">
+                    </video>
+                    <div class="overlay">
+                        <div class="callToAction">
+                            <h1>Staycation</h1>
+                            <a href="#about"><h3>relax and reset</h3></a>
+                        </div>
+                    </div>
+                </div>        
+            
             </div>
         </div>
 
-
         <!-- About us section -->
         <div class="row area">
-            <div class="col-lg-6 col-md-6" id="about">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12" id="about">
                 <h2 class="fade">About us</h2>
-                <p class="fade">Escape normality and enjoy a retreat in one of our luxorious staycations across the beautiful west Wales coast including cosy log cabins, glamping yurts, family-friendly cottages and romantic hideaways with hot-tubs! The area is known for its beautiful landscape, beaches and walks as well as its delicious restruants, local pubs and cultural landmarks. </p>
+                <p class="fade">Escape normality and enjoy a retreat in one of our luxorious staycations 
+                    across the beautiful west Wales coast. ‘Tŷ’ is Welsh for home, and that’s where we want our 
+                    sites to feel like. We offer lots of places to stay including cosy log cabins, glamping yurts,
+                     friendly cottages and romantic hideaways with hot tubs and we’re nested in Welsh towns where
+                      you can submerge yourself in local culture, the sound of the sea and mountainous views with 
+                      some quality time alone or with loved ones. We will provide you all of the comfort and care of 
+                      a 5-star hotel in a cosy home with no detail spared.</p>
             </div>
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xl-6">
                 <img class="fade contentImage" src="assets/images/sheep.jpg" alt="Welsh sheep">
             </div>
         </div>
@@ -105,6 +115,9 @@
 
         <!-- Google Map -->
         <div class="row area" id="locations">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12">
+                <h3>Our Locations</h3>
+            </div>
             <div class="col-lg-6 col-md-6 map">
                 <div id="map" class="fade">
                 </div>
@@ -120,8 +133,12 @@
                     </select>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 amenities">
-                <p class="fade">Across the west coast we offer lots of exclusive locations that you can book. Explore these on the map and use the drop down options to find ideas for your trip.</p>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 amenities">
+                <p class="fade">Across the west coast we offer lots of exclusive locations that 
+                    you can book. Click on the map to explore these beautiful places and use the 
+                    drop-down options to find out what amenities are nearby. The region is known 
+                    for its beautiful landscape, beaches and walks as well as its delicious restruants, 
+                    local pubs and cultural and family-friendly landmarks.</p>
             </div>
         </div>
 
@@ -134,7 +151,13 @@
 
         <!-- Contact us form -->
         <div class="row area">
-            <div class="col-lg-6 contact" id="contactUs">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 contactText">
+                <h3>Contact Us</h3>
+                <p>For a tailored experience at the highest level of care, please contact us with 
+                    your Tŷ Staycation request and we will arrange it for you.<br>
+                    We will plan a special holiday specifically for you, according to your wishes.</p>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12  contact" id="contactUs">
                 <form class="fade" onsubmit="return sendMail(this);">
                     <label for="fullname">Name:
                         <input type="text" name="name" id="fullname" class="formfield" placeholder="Name" required="required" /> 
@@ -155,27 +178,13 @@
                     <p id="successSubmission">Thank you for you’re message. We will get back to you as soon as we can.</p>
                 </div>
             </div>
-            <div class="col-lg-6 fade logoGroup">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img class="logo" src="assets/images/lonelyPlanet.png" alt="Lonely Planet logo">
-                    </div>
-                    <div class="col-md-4">
-                        <img class="logo" src="assets/images/glampingHub.png" alt="Glamping Hub logo">
-                    </div>
-                    <div class="col-md-4">
-                        <img class="logo" src="assets/images/google.png" alt="Google logo">
-                    </div>
-                    <div class="col-md-4">
-                        <img class="logo" src="assets/images/trustpilot.png" alt="Trust Pilot logo">
-                    </div>
-                    <div class="col-md-4">
-                        <img class="logo" src="assets/images/wanderlust.jpg" alt="Wanderlust logo">
-                    </div>
-                    <div class="col-md-4">
-                        <img class="logo" src="assets/images/welshGov.png" alt="Welsh Government logo">
-                    </div>
-                </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 fade logoGroup">
+                    <img class="logo" src="assets/images/lonelyPlanet.png" alt="Lonely Planet logo">
+                    <img class="logo" src="assets/images/glampingHub.png" alt="Glamping Hub logo">
+                    <img class="logo" src="assets/images/google.png" alt="Google logo">
+                    <img class="logo" src="assets/images/trustpilot.png" alt="Trust Pilot logo">
+                    <img class="logo" src="assets/images/wanderlust.jpg" alt="Wanderlust logo">
+                    <img class="logo" src="assets/images/welshGov.png" alt="Welsh Government logo">
             </div>
         </div>
 
@@ -185,46 +194,45 @@
                 <a href="#about" class="fa fa-chevron-up"></a>
             </div>
         </div>
-        </div>
 
         <!-- Footer -->
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-            <footer class="area">
-                <h5>&#169; Ty Staycation 2021</h5>
-                <!-- Links to take user back to website sections-->
-                <div>
-                    <a href="#landingPage">Home</a>
-                    <a href="#about">About us</a>
-                    <a href="#locations">Locations</a>
-                    <a href="#contactUs">Contact us</a>
-                </div>
-                <!-- Address and contact information-->
-                <div>
-                    <a href="mailto:tystaycation@gmail.com" class="fa fa-envelope-open icon"><span class="contactLinks"> Email</span></a><br>
-                    <a href="01446 342 242" class="fa fa-phone icon"><span class="contactLinks"> Phone</span></a><br>
-                    <address>
-                        12 The Strand<br>
-                        Saundersfoot<br>
-                        West Wales
-                    </address>
-                </div>
-                <!-- Social Media links -->
-                <div>
-                    <a href="https://www.facebook.com" class="social" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="hhtps://www.instagram.com" class="social" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://www.twitter.com" class="social" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://www.pinterest.com" class="social" target="_blank">
-                        <i class="fab fa-pinterest"></i>
-                    </a>
-                </div>
-            </footer>
+                <footer class="area">
+                    <h5>&#169; Ty Staycation 2021</h5>
+                    <!-- Links to take user back to website sections-->
+                    <div>
+                        <a href="#landingPage">Home</a>
+                        <a href="#about">About us</a>
+                        <a href="#locations">Locations</a>
+                        <a href="#contactUs">Contact us</a>
+                    </div>
+                    <!-- Address and contact information-->
+                    <div>
+                        <a href="mailto:tystaycation@gmail.com" class="fa fa-envelope-open icon"><span class="contactLinks"> Email</span></a><br>
+                        <a href="01446342242" class="fa fa-phone icon"><span class="contactLinks"> Phone</span></a><br>
+                        <address>
+                            12 The Strand<br>
+                            Saundersfoot<br>
+                            West Wales
+                        </address>
+                    </div>
+                    <!-- Social Media links -->
+                    <div>
+                        <a href="https://www.facebook.com" class="social" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="hhtps://www.instagram.com" class="social" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.twitter.com" class="social" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.pinterest.com" class="social" target="_blank">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </footer>
             </div>
         </div>
 
@@ -244,7 +252,7 @@
         <script src="assets/js/sendEmail.js"></script>
         <script src="assets/js/maps.js"></script>
         <script src="assets/js/fadeIn.js"></script>
-    
+
     </div>
 </body>
 </html>

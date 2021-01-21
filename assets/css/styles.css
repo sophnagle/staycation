@@ -81,6 +81,10 @@ body {
     content: "the top";
 }
 
+h3 {
+    text-align: center;
+}
+
 
 /*...................................Landing page*/
 
@@ -134,22 +138,31 @@ body {
 
 /*..................................About */
 
-.contentImage {
-    margin: 30px;
-    width: 50px;
-    height: 50px;
+#about {
+    margin: auto;
+    padding: 40px;
 }
 
-
+.contentImage {
+    margin: 30px;
+    width: 90%;
+    height: 90%;
+}
 
 /*..................................Map */
 
 .map {
-    margin: 30px;
+    margin: auto;
+    padding: 40px;
 }
 
 #map {
-    min-height: 360px;
+    min-height: 400px;
+}
+
+.amenities {
+    margin: auto;
+    padding: 40px;
 }
 
 .amenities p {
@@ -179,17 +192,24 @@ label, input {
   display: none;
 }
 
-/*..................................Images*/ 
+.contactText {
+    text-align: center;
+}
+
+/*..................................Trusted partners*/ 
 
 .logo {
     border-radius: 50%;
     height: 100px;
     width: 100px;
+    margin: 20px;
 }
 
 .logoGroup {
-    align-items: center;
-    display: inline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
 }
 
 
@@ -226,6 +246,16 @@ address {
 
 /*.................................Media Queries */
 
+/* Medium devices (tablets 768px and up) */
+
+@media (min-width: 768px) {
+
+    .logoGroup {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 
 /*  Large devices (desktops, 992px and up) */ 
 
