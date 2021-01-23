@@ -1,4 +1,4 @@
-  /* ---------------------- Code used from https://jsfiddle.net/tcloninger/e5qaD/ */ 
+  /* ---------------------- Code taken and adapted from https://jsfiddle.net/tcloninger/e5qaD/ */ 
 
  $(document).ready(function () {
     /* Every time the window is scrolled ... */
@@ -6,8 +6,8 @@
         /* Check the location of each desired element */
         $(".fade").each( function() {
             
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            let bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            let bottom_of_window = $(window).scrollTop() + $(window).height();
 
             /* If the object is completely visible in the window, fade it it */
             if( bottom_of_window > bottom_of_object ){
