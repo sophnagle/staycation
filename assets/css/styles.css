@@ -95,6 +95,10 @@ h3 {
     padding: 25px 0px;
 }
 
+h4 {
+    font-size: 1.5rem;
+}
+
 
 
 /*...................................Landing page*/
@@ -179,6 +183,10 @@ h3 {
 
 #map {
     min-height: 400px;
+}
+
+.card {
+    width: 15rem;
 }
 
 .amenities {
@@ -296,6 +304,10 @@ address {
     .callToAction h1 {
         font-size: 4.5rem;
     }
+
+    .card {
+        width: 10rem;
+    }
 }
 
 /*  Large devices (desktops, 992px and up) */ 
@@ -335,6 +347,10 @@ address {
         margin: 30px;
         width: 90%;
         height: 90%;
+    }
+
+    .card {
+        width: 20rem;
     }
 
     #submit {

@@ -10,8 +10,8 @@ function initMap() {
 
         for (let i = 0; i < locations.length; i++) {
             const infoWindow = new google.maps.InfoWindow({
-                content: locations[i].title + `<a href="` +  locations[i].url + `"` + ` target="_blank">` 
-                                        + `<div class="card" style="width: 15rem;">` + `<img class="card-img-top" src="` + locations[i].image + `"` + `alt="Location">` 
+                content: `<h4>` + locations[i].title + `</h4>`  + `<a href="` +  locations[i].url + `"` + ` target="_blank">` 
+                                        + `<div class="card">` + `<img class="card-img-top" src="` + locations[i].image + `"` + `alt="Location">` 
                                             + `</div>` + `</a>`,
             });
 
@@ -47,8 +47,8 @@ function showAmenity(sel) {
                 for (let i = 0; i < pubs.length; i++) {
 
                     const infoWindow = new google.maps.InfoWindow({
-                    content: pubs[i].title + `<a href="` +  pubs[i].url + `"` + ` target="_blank">` 
-                                                + `<div class="card" style="width: 15rem;">` + `<img class="card-img-top" src="` + pubs[i].image + `"` + `alt="Amenity">` 
+                    content: `<h4>` + pubs[i].title + `</h4>` + `<a href="` +  pubs[i].url + `"` + ` target="_blank">` 
+                                                + `<div class="card">` + `<img class="card-img-top" src="` + pubs[i].image + `"` + `alt="Amenity">` 
                                                     + `</div>` + `</a>`,
                     });
 
@@ -67,8 +67,8 @@ function showAmenity(sel) {
                 for (let i = 0; i < beach.length; i++) {
 
                     const infoWindow = new google.maps.InfoWindow({
-                        content: beach[i].title + `<a href="` +  beach[i].url + `"` + ` target="_blank">` 
-                                                + `<div class="card" style="width: 15rem;">` + `<img class="card-img-top" src="` + beach[i].image + `"` + `alt="Beach">` 
+                        content: `<h4>` + beach[i].title + `</h4>` + `<a href="` +  beach[i].url + `"` + ` target="_blank">` 
+                                                + `<div class="card">` + `<img class="card-img-top" src="` + beach[i].image + `"` + `alt="Beach">` 
                                                     + `</div>` + `</a>`,
                     });
 
@@ -87,8 +87,8 @@ function showAmenity(sel) {
 
                 for (let i = 0; i < restaurants.length; i++) {
                     const infoWindow = new google.maps.InfoWindow({
-                    content: restaurants[i].title + `<a href="` +  restaurants[i].url + `"` + ` target="_blank">` 
-                                                + `<div class="card" style="width: 15rem;">` + `<img class="card-img-top" src="` + restaurants[i].image + `"` + `alt="Restaurant">` 
+                    content: `<h4>` + restaurants[i].title + `</h4>` + `<a href="` +  restaurants[i].url + `"` + ` target="_blank">` 
+                                                + `<div class="card">` + `<img class="card-img-top" src="` + restaurants[i].image + `"` + `alt="Restaurant">` 
                                                     + `</div>` + `</a>`,
                     });
 
@@ -109,8 +109,8 @@ function showAmenity(sel) {
 
                 for (let i = 0; i < walks.length; i++) {
                     const infoWindow = new google.maps.InfoWindow({
-                        content: walks[i].title + `<a href="` +  walks[i].url + `"` + ` target="_blank">` 
-                                                    + `<div class="card" style="width: 15rem;">` + `<img class="card-img-top" src="` + walks[i].image + `"` + `alt="Pub">` 
+                        content: `<h4>` + walks[i].title + `</h4>` + `<a href="` +  walks[i].url + `"` + ` target="_blank">` 
+                                                    + `<div class="card">` + `<img class="card-img-top" src="` + walks[i].image + `"` + `alt="Pub">` 
                                                         + `</div>` + `</a>`,
                         });
 
@@ -130,8 +130,8 @@ function showAmenity(sel) {
 
                 for (let i = 0; i < family.length; i++) {
                     const infoWindow = new google.maps.InfoWindow({
-                        content: family[i].title + `<a href="` +  family[i].url + `"` + ` target="_blank">` 
-                                                    + `<div class="card" style="width: 15rem;">` + `<img class="card-img-top" src="` + family[i].image + `"` + `alt="Family">` 
+                        content: `<h4>` + family[i].title + `</h4>` + `<a href="` +  family[i].url + `"` + ` target="_blank">` 
+                                                    + `<div class="card">` + `<img class="card-img-top" src="` + family[i].image + `"` + `alt="Family">` 
                                                         + `</div>` + `</a>`,
                         });
 
@@ -151,8 +151,8 @@ function showAmenity(sel) {
 
                 for (let i = 0; i < locations.length; i++) {
                         const infoWindow = new google.maps.InfoWindow({
-                            content: locations[i].title + `<a href="` +  locations[i].url + `"` + ` target="_blank">` 
-                                                    + `<div class="card" style="width: 15rem;">` + `<img class="card-img-top" src="` + locations[i].image + `"` + `alt="Location">` 
+                            content: `<h4>` + locations[i].title + `</h4>` + `<a href="` +  locations[i].url + `"` + ` target="_blank">` 
+                                                    + `<div class="card">` + `<img class="card-img-top" src="` + locations[i].image + `"` + `alt="Location">` 
                                                         + `</div>` + `</a>`,
                         });
 
