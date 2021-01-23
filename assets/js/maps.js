@@ -175,7 +175,7 @@ function showAmenity(sel) {
 
 
 
-var locations = [
+const locations = [
     
     {
         title: "Fforest Farm",
@@ -257,7 +257,7 @@ var locations = [
 
 ];
 
-var pubs = [
+const pubs = [
 
     {
         title: "The Jolly Sailor",
@@ -338,7 +338,7 @@ var pubs = [
 
 ];
 
-var restaurants = [
+const restaurants = [
 
     {
         title: "Blue Ball Restaurant",
@@ -396,7 +396,7 @@ var restaurants = [
     },
 ];
 
-var beach = [
+const beach = [
 
     {
         title: "Tenby",
@@ -466,7 +466,7 @@ var beach = [
 
 ];
 
-var walks = [
+const walks = [
 
     {
         title: "Caldy Island",
@@ -514,7 +514,7 @@ var walks = [
 
 ];
 
-var family = [
+const family = [
 
     {
         title: "Oakwood",
