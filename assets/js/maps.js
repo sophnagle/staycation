@@ -10,9 +10,9 @@ function initMap() {
 
         for (let i = 0; i < locations.length; i++) {
             const infoWindow = new google.maps.InfoWindow({
-                content: `<h4>` + locations[i].title + `</h4>`  + `<a href="` +  locations[i].url + `"` + ` target="_blank">` 
-                                        + `<div class="card">` + `<img class="card-img-top" src="` + locations[i].image + `"` + `alt="Location">` 
-                                            + `</div>` + `</a>`,
+                content: `<h4 class="cardWindow card-text">` + locations[i].title + `</h4>` + `<a href="` + 
+                            locations[i].url + `"` + ` target="_blank">`+ `<div class="card">` + `<img class="card-img-top" src="` + 
+                                locations[i].image + `"` + `alt="Location">` + `</div>` + `</a>`,
             });
 
             const marker = new google.maps.Marker({
@@ -47,9 +47,9 @@ function showAmenity(sel) {
                 for (let i = 0; i < pubs.length; i++) {
 
                     const infoWindow = new google.maps.InfoWindow({
-                    content: `<h4>` + pubs[i].title + `</h4>` + `<a href="` +  pubs[i].url + `"` + ` target="_blank">` 
-                                                + `<div class="card">` + `<img class="card-img-top" src="` + pubs[i].image + `"` + `alt="Amenity">` 
-                                                    + `</div>` + `</a>`,
+                    content: `<h4 class="cardWindow card-text">` + pubs[i].title + `</h4>` + `<a href="` + 
+                            pubs[i].url + `"` + ` target="_blank">`+ `<div class="card">` + `<img class="card-img-top" src="` + 
+                                pubs[i].image + `"` + `alt="Location">` + `</div>` + `</a>`,
                     });
 
                     const marker = new google.maps.Marker({
@@ -67,9 +67,9 @@ function showAmenity(sel) {
                 for (let i = 0; i < beach.length; i++) {
 
                     const infoWindow = new google.maps.InfoWindow({
-                        content: `<h4>` + beach[i].title + `</h4>` + `<a href="` +  beach[i].url + `"` + ` target="_blank">` 
-                                                + `<div class="card">` + `<img class="card-img-top" src="` + beach[i].image + `"` + `alt="Beach">` 
-                                                    + `</div>` + `</a>`,
+                        content: `<h4 class="cardWindow card-text">` + beach[i].title + `</h4>` + `<a href="` + 
+                            beach[i].url + `"` + ` target="_blank">`+ `<div class="card">` + `<img class="card-img-top" src="` + 
+                                beach[i].image + `"` + `alt="Location">` + `</div>` + `</a>`,
                     });
 
                     const marker = new google.maps.Marker({
@@ -87,9 +87,9 @@ function showAmenity(sel) {
 
                 for (let i = 0; i < restaurants.length; i++) {
                     const infoWindow = new google.maps.InfoWindow({
-                    content: `<h4>` + restaurants[i].title + `</h4>` + `<a href="` +  restaurants[i].url + `"` + ` target="_blank">` 
-                                                + `<div class="card">` + `<img class="card-img-top" src="` + restaurants[i].image + `"` + `alt="Restaurant">` 
-                                                    + `</div>` + `</a>`,
+                    content: `<h4 class="cardWindow card-text">` + restaurants[i].title + `</h4>` + `<a href="` + 
+                            restaurants[i].url + `"` + ` target="_blank">`+ `<div class="card">` + `<img class="card-img-top" src="` + 
+                                restaurants[i].image + `"` + `alt="Location">` + `</div>` + `</a>`,
                     });
 
                     const marker = new google.maps.Marker({
@@ -109,9 +109,9 @@ function showAmenity(sel) {
 
                 for (let i = 0; i < walks.length; i++) {
                     const infoWindow = new google.maps.InfoWindow({
-                        content: `<h4>` + walks[i].title + `</h4>` + `<a href="` +  walks[i].url + `"` + ` target="_blank">` 
-                                                    + `<div class="card">` + `<img class="card-img-top" src="` + walks[i].image + `"` + `alt="Pub">` 
-                                                        + `</div>` + `</a>`,
+                        content: `<h4 class="cardWindow card-text">` + walks[i].title + `</h4>` + `<a href="` + 
+                                    walks[i].url + `"` + ` target="_blank">`+ `<div class="card">` + `<img class="card-img-top" src="` + 
+                                        walks[i].image + `"` + `alt="Location">` + `</div>` + `</a>`,
                         });
 
                         const marker = new google.maps.Marker({
@@ -130,9 +130,9 @@ function showAmenity(sel) {
 
                 for (let i = 0; i < family.length; i++) {
                     const infoWindow = new google.maps.InfoWindow({
-                        content: `<h4>` + family[i].title + `</h4>` + `<a href="` +  family[i].url + `"` + ` target="_blank">` 
-                                                    + `<div class="card">` + `<img class="card-img-top" src="` + family[i].image + `"` + `alt="Family">` 
-                                                        + `</div>` + `</a>`,
+                        content: `<h4 class="cardWindow card-text">` + family[i].title + `</h4>` + `<a href="` + 
+                            family[i].url + `"` + ` target="_blank">`+ `<div class="card">` + `<img class="card-img-top" src="` + 
+                                family[i].image + `"` + `alt="Location">` + `</div>` + `</a>`,
                         });
 
                         const marker = new google.maps.Marker({
@@ -151,9 +151,9 @@ function showAmenity(sel) {
 
                 for (let i = 0; i < locations.length; i++) {
                         const infoWindow = new google.maps.InfoWindow({
-                            content: `<h4>` + locations[i].title + `</h4>` + `<a href="` +  locations[i].url + `"` + ` target="_blank">` 
-                                                    + `<div class="card">` + `<img class="card-img-top" src="` + locations[i].image + `"` + `alt="Location">` 
-                                                        + `</div>` + `</a>`,
+                            content: `<h4 class="cardWindow card-text">` + locations[i].title + `</h4>` + `<a href="` + 
+                                        locations[i].url + `"` + ` target="_blank">`+ `<div class="card">` + `<img class="card-img-top" src="` + 
+                                            locations[i].image + `"` + `alt="Location">` + `</div>` + `</a>`,
                         });
 
                         const marker = new google.maps.Marker({
