@@ -215,6 +215,11 @@ Returning visitor goals:
 * I have a query about a trip that I have already booked.  
 * I want to find out if there are new properties I could stay at and/or new amenities that they recommend.
 
+The main features as required by these user-stories are the interactive map, that shows the companies properties and local amenities, and a contact form as can seen in the below screenshots. 
+
+![alt Responsive map](assets/images/readme/interactive.JPG)
+![alt Contact form](assets/images/readme/contactform.JPG)
+
 ### Design 
 
 I have used a single page layout for ease of finding information altogether. I wanted the site to have a relaxed feel whilst also enticing users. From comparative research I wanted to use imagery of the area and locations as a key part of the design with a minimal layout and design behind this. 
