@@ -1,27 +1,34 @@
 function initMap() {
 
         let map = new google.maps.Map(document.getElementById("map"), {
+        /* Initiates the map */
             zoom: 8,
             center: {
                 lat: 51.7094,
                 lng: -4.6998
             }
+        /* Focus on West Wales */
         });
 
         for (let i = 0; i < locations.length; i++) {
+            /* Iterates through location array */ 
             const infoWindow = new google.maps.InfoWindow({
                 content: `<h4 class="cardWindow card-text">` + locations[i].title + `</h4>` + `<a href="` + 
                             locations[i].url + `"` + ` target="_blank">`+ `<div class="card">` + `<img class="card-img-top" src="` + 
                                 locations[i].image + `"` + `alt="Location">` + `</div>` + `</a>`,
+            /* Creates infoWindow with content image, title and link */
             });
 
             const marker = new google.maps.Marker({
+                /* Creates map marker for each location taken details from its array */
                 position: locations[i].position,
+                /* Adds animation to map marker as page loads */
                 animation: google.maps.Animation.DROP,
                 map: map,
             });
 
             marker.addListener("click", () => {
+            /* On click infoWindow appears */
                 infoWindow.open(map, marker);
             });
 
@@ -32,6 +39,7 @@ function initMap() {
 
 function showAmenity(sel) {
 
+    /* Takes the value from the Dropdown menu that user selects */
     var value = sel.value;
 
     let map = new google.maps.Map(document.getElementById("map"), {
@@ -43,6 +51,7 @@ function showAmenity(sel) {
         });
 
         if (value == "pubs") {
+            /* if fuction iterates through location/amenity array depending on the value of user selection*/ 
 
                 for (let i = 0; i < pubs.length; i++) {
 
