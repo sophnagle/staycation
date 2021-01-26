@@ -359,6 +359,8 @@ As per the UX strategy scope, I think the site would be improved with a payment 
 
 The card windows that host the information about the places to stay and amenities could be larger or include slide show to give users further visual information about these places. Again, this improvement in UX can be added at a future release. 
 
+The function design of the interactive map means that the travel company can add any new rental properties or amenities to the site as needed. This can continue both inbetween and in new releases. 
+
 An additional feature to add is a custom page 404. Something custom designed in keeping with the website helps the brands presence in making it appear more trustworthy and knowledgeable. 
 
 --- 
@@ -405,6 +407,8 @@ The HTML and CSS were validated with [HTML Validator](https://validator.w3.org/)
 
 HTML: errors found and rectified throughout. These often included misaligned div containers. 
 CSS: typographic errors found and rectified throughout. 
+
+The JavaScript files were run through [JSHint}(https://jshint.com/). Some variables were flagged in the EmailJS file, however this is as per the EmailJS instructions. There were no errors.   
 
 I tested JavaScript while compiling using console.log to check if the code and functions were being called correctly. 
 
